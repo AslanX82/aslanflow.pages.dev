@@ -1,0 +1,71 @@
+
+/*
+  TEMPLATE STYLES: These styles are used as a base template.
+  AI is allowed to modify these styles as needed.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'DM Sans', sans-serif;
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  :root {
+		--background: 0 0% 100%;
+		--foreground: 215 28% 17%;
+		--card: 0 0% 100%;
+		--card-foreground: 215 28% 17%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 215 28% 17%;
+		--primary: 226 100% 68%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 160 84% 39%;
+		--secondary-foreground: 0 0% 100%;
+		--muted: 215 16% 65%;
+		--muted-foreground: 217 19% 46%;
+		--accent: 45 93% 56%;
+		--accent-foreground: 215 28% 17%;
+		--destructive: 0 84% 60%;
+		--destructive-foreground: 0 0% 100%;
+		--border: 220 13% 91%;
+		--input: 210 20% 96%;
+		--ring: 226 100% 68%;
+		--radius: 0.5rem;
+	}
+  .dark {
+		--background: 0 0% 3.9%;
+		--foreground: 0 0% 98%;
+		--card: 0 0% 3.9%;
+		--card-foreground: 0 0% 98%;
+		--popover: 0 0% 3.9%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 226 100% 68%;
+		--primary-foreground: 0 0% 100%;
+		--secondary: 160 84% 39%;
+		--secondary-foreground: 0 0% 100%;
+		--muted: 0 0% 14.9%;
+		--muted-foreground: 0 0% 63.9%;
+		--accent: 45 93% 56%;
+		--accent-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 0 0% 14.9%;
+		--input: 0 0% 14.9%;
+		--ring: 226 100% 68%;
+	}
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
